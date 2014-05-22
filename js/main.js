@@ -95,12 +95,12 @@
             currentHashString === '#'||
             currentHashString === '#!')
         {
-            newHashString = '#!index.md';
+            newHashString = '#!index.t2t';
         }
         else if (currentHashString.startsWith ('#!') &&
                  currentHashString.endsWith('/')
                 ) {
-            newHashString = currentHashString + 'index.md';
+            newHashString = currentHashString + 'index.t2t';
         }
         if (newHashString)
             window.location.hash = newHashString;

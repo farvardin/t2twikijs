@@ -379,7 +379,7 @@
 		var filename = window.location.hash;
 
 		if (filename.length === 0) {
-            filename = '#!index.md';
+            filename = '#!index.t2t';
         }
 		var selector = 'li:has(a[href="' + filename + '"])';
 		$('#md-menu').find (selector).addClass ('active');
@@ -495,8 +495,8 @@
         navbar += '<hr><div class="scontainer">';
         navbar +=   '<div class="pull-right md-copyright-footer"> ';
         navbar +=     '<span id="md-footer-additional"></span>';
-        navbar +=     'Website generated with <a href="http://www.mdwiki.info">MDwiki</a> ';
-        navbar +=     '&copy; Timo D&ouml;rr and contributors. ';
+        navbar +=     'Website generated with <a href="https://github.com/farvardin/t2twikijs">t2twikijs</a> ';
+        navbar +=     ' ';
         navbar +=   '</div>';
         navbar += '</div>';
         var $navbar = $(navbar);
